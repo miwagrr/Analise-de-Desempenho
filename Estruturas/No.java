@@ -1,3 +1,5 @@
+package Estruturas;
+
 public class No {
     int valor;
     No esquerda;
