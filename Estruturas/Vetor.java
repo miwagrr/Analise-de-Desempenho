@@ -1,3 +1,5 @@
+package Estruturas;
+
 public class Vetor {
     private int[] elementos;
     private int tamanho;

@@ -1,3 +1,5 @@
+package Estruturas;
+
 public class ArvoreBinariaDeBusca {
     private No raiz;
 
