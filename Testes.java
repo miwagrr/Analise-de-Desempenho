@@ -23,8 +23,6 @@ public class Testes {
         v.inserirVetor(5);
         v.inserirVetor(2);
         v.inserirVetor(9);
-        v.inserirVetor(1);
-        v.inserirVetor(7);
 
         int[] elementos = v.getElementos();
 
@@ -53,15 +51,15 @@ public class Testes {
             System.out.print(vetor100[i] + " ");
         }
 
-        int[] vetor15 = GerarDados.gerarVetorDecrescente(10);
-        int[] vetor90 = GerarDados.gerarVetorDecrescente(100);
+        int[] vetor15 = GerarDados.gerarVetorDecrescente(15);
+        int[] vetor90 = GerarDados.gerarVetorDecrescente(90);
     
-        System.out.println("\nVetor de tamanho 10 decrescente:");
+        System.out.println("\nVetor de tamanho 15 decrescente:");
         for (int i = 0; i < vetor15.length; i++) {
             System.out.print(vetor15[i] + " ");
         }
 
-        System.out.println("\nVetor de tamanho 100 decrescente:");
+        System.out.println("\nVetor de tamanho 90 decrescente:");
         for (int i = 0; i < vetor90.length; i++) {
             System.out.print(vetor90[i] + " ");
         }
