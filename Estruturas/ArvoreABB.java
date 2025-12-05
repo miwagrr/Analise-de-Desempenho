@@ -1,12 +1,12 @@
 package Estruturas;
 
-public class ArvoreBinariaDeBusca {
+public class ArvoreABB {
     private No raiz;
 
     public void inserirABB(int valor) {
         raiz = inserirRecursivo(raiz, valor);
     }
-
+    
     private No inserirRecursivo(No raiz, int valor){ 
         if(raiz == null){
             return new No(valor); //caso a raiz seja nula, o valor fornecido se torna a nova raiz
