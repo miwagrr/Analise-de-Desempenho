@@ -50,4 +50,18 @@ public class Vetor {
     public int getTamanho() {
         return this.tamanho;
     }
+
+    public void ordenarBubbleSort(int[] vetor, int tamanho){
+        for(int i = 0; i < tamanho; i++){
+            for(int j = 0; j < tamanho - 1; j++){
+                if(vetor[j] > vetor[j + 1]){
+                    int temporario = vetor[j];
+                    vetor[j] = vetor[j + 1];
+                    vetor[j + 1] = temporario;
+                }
+            }
+        }
+    }
+
+    public void ordenarQuickSort()
 }
