@@ -63,5 +63,7 @@ public class Vetor {
         }
     }
 
-    public void ordenarQuickSort()
+    public void ordenarQuickSort(){
+        
+    }
 }

@@ -1,0 +1,11 @@
+import java.util.Random;
+
+public class GerarDados{
+    public static int[] gerarOrdenada(int tamanho){
+        int[] vetor = new int[tamanho];
+        for(int i = 0; i < tamanho; i++){
+            vetor[i] = i;
+        }
+        return vetor;
+    }
+}

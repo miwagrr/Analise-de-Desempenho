@@ -39,5 +39,18 @@ public class Testes {
         for (int i = 0; i < v.getTamanho(); i++) {
             System.out.print(elementos[i] + " ");
         }
+
+        int[] vetor10 = GerarDados.gerarOrdenada(10);
+        int[] vetor100 = GerarDados.gerarOrdenada(100);
+    
+        System.out.println("\nVetor de tamanho 10:");
+        for (int i = 0; i < vetor10.length; i++) {
+            System.out.print(vetor10[i] + " ");
+        }
+
+        System.out.println("\nVetor de tamanho 100:");
+        for (int i = 0; i < vetor100.length; i++) {
+            System.out.print(vetor100[i] + " ");
+        }
     }
 }
