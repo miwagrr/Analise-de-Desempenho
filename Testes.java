@@ -40,8 +40,8 @@ public class Testes {
             System.out.print(elementos[i] + " ");
         }
 
-        int[] vetor10 = GerarDados.gerarOrdenada(10);
-        int[] vetor100 = GerarDados.gerarOrdenada(100);
+        int[] vetor10 = GerarDados.gerarVetorCrescente(10);
+        int[] vetor100 = GerarDados.gerarVetorCrescente(100);
     
         System.out.println("\nVetor de tamanho 10:");
         for (int i = 0; i < vetor10.length; i++) {
@@ -51,6 +51,19 @@ public class Testes {
         System.out.println("\nVetor de tamanho 100:");
         for (int i = 0; i < vetor100.length; i++) {
             System.out.print(vetor100[i] + " ");
+        }
+
+        int[] vetor15 = GerarDados.gerarVetorDecrescente(10);
+        int[] vetor90 = GerarDados.gerarVetorDecrescente(100);
+    
+        System.out.println("\nVetor de tamanho 10 decrescente:");
+        for (int i = 0; i < vetor15.length; i++) {
+            System.out.print(vetor15[i] + " ");
+        }
+
+        System.out.println("\nVetor de tamanho 100 decrescente:");
+        for (int i = 0; i < vetor90.length; i++) {
+            System.out.print(vetor90[i] + " ");
         }
     }
 }
