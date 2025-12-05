@@ -1,3 +1,3 @@
-![Capa do Projeto](Analise-de-Desempenho/img.png)
+![Capa do Projeto](img.png)
 
 # Analise-de-Desempenho
