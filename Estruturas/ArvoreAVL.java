@@ -69,6 +69,5 @@ public class ArvoreAVL {
         return calculoAltura(no.direita) - calculoAltura(no.esquerda);
         //calcula altura da subárvore direita - esquerda para checar o fb. Caso seja menor que -1 ou maior que 1, a árvore está desbalanceada.
     }
-
 }
 

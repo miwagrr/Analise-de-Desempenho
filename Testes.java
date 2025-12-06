@@ -14,9 +14,19 @@ public class Testes {
         arvore.inserirAVL(15);
         arvore.inserirAVL(16);
         arvore.inserirAVL(3);
+
         System.out.println("Altura da árvore: " + arvore.testarAltura(arvore.getRaiz()));
         System.out.println("Existe 15 na árvore? " + arvore.buscarAVL(15));
+
+        double tempoBuscaAVL15 = MedidorTempo.medirBuscaEmAVL(arvore, 15);
+
+        System.out.println("Tempo de busca (AVL) para o valor 15: " + tempoBuscaAVL15 + " ms");
+
         System.out.println("Existe 4 na árvore? " + arvore.buscarAVL(4));
+
+        double tempoBuscaAVL4 = MedidorTempo.medirBuscaEmAVL(arvore, 4);
+
+        System.out.println("Tempo de busca (AVL) para o valor 4: " + tempoBuscaAVL4 + " ms");
 
         Vetor v = new Vetor(10);
 
@@ -26,7 +36,7 @@ public class Testes {
 
         int[] elementos = v.getElementos();
 
-        System.out.println("Antes de ordenar:");
+        System.out.println("\nAntes de ordenar:");
         for (int i = 0; i < v.getTamanho(); i++) {
             System.out.print(elementos[i] + " ");
         }
@@ -38,6 +48,9 @@ public class Testes {
             System.out.print(elementos[i] + " ");
         }
 
+        double tempoBubbleV = MedidorTempo.medirBubbleSort(elementos);
+        System.out.println("\nTempo de BubbleSort: " + tempoBubbleV + " ms");
+
         int[] vetor10 = GerarDados.gerarVetorCrescente(10);
         int[] vetor100 = GerarDados.gerarVetorCrescente(100);
     
@@ -45,6 +58,9 @@ public class Testes {
         for (int i = 0; i < vetor10.length; i++) {
             System.out.print(vetor10[i] + " ");
         }
+
+        double tempoVetor10 = MedidorTempo.medirInsercaoEmVetor(vetor10);
+        System.out.println("\nTempo de inserção no Vetor: " + tempoVetor10 + " ms");
 
         System.out.println("\nVetor de tamanho 100:");
         for (int i = 0; i < vetor100.length; i++) {
@@ -63,5 +79,10 @@ public class Testes {
         for (int i = 0; i < vetor90.length; i++) {
             System.out.print(vetor90[i] + " ");
         }
-    }
+
+        int[] vetorTesteTempo = GerarDados.gerarVetorAleatorio(1000);
+
+        double tempoVetor = MedidorTempo.medirInsercaoEmVetor(vetorTesteTempo);
+        System.out.println("\nTempo de inserção no Vetor: " + tempoVetor + " ms");
+    }    
 }

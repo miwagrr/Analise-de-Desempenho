@@ -38,4 +38,40 @@ public class MedidorTempo {
         long fim = System.nanoTime();
         return (fim - inicio)/1000000.0;
     }
+
+    public static double medirBuscaSequencialEmVetor(Vetor vetor, int valor){
+        long inicio = System.nanoTime();
+        vetor.buscaSequencial(valor);
+        long fim = System.nanoTime();
+        return (fim - inicio)/1000000.0;
+    }
+
+    public static double medirBuscaBinariaEmVetor(Vetor vetor, int valor){
+        long inicio = System.nanoTime();
+        vetor.buscaBinaria(valor);
+        long fim = System.nanoTime();
+        return (fim - inicio)/1000000.0;
+    }
+
+    public static double medirBuscaEmABB(ArvoreABB arvoreABB, int valor){
+        long inicio = System.nanoTime();
+        arvoreABB.buscarABB(valor);
+        long fim = System.nanoTime();
+        return (fim - inicio)/1000000.0;
+    }
+
+    public static double medirBuscaEmAVL(ArvoreAVL arvoreAVL, int valor){
+        long inicio = System.nanoTime();
+        arvoreAVL.buscarAVL(valor);
+        long fim = System.nanoTime();
+        return (fim - inicio)/1000000.0;
+    }
+
+    public static double medirBubbleSort(int[] vetor){
+        long inicio = System.nanoTime();
+        Vetor v = new Vetor(vetor.length);
+        v.ordenarBubbleSort(vetor, vetor.length);
+        long fim = System.nanoTime();
+        return (fim - inicio)/1000000.0;
+    }
 }
