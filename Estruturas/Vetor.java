@@ -51,7 +51,7 @@ public class Vetor {
         return this.tamanho;
     }
 
-    public void ordenarBubbleSort(int[] vetor, int tamanho){
+    public void ordenarBubbleSort(int[] vetor, int tamanho){ //implementação do método de ordenação bubblesort
         for(int i = 0; i < tamanho; i++){
             for(int j = 0; j < tamanho - 1; j++){
                 if(vetor[j] > vetor[j + 1]){
@@ -61,9 +61,5 @@ public class Vetor {
                 }
             }
         }
-    }
-
-    public void ordenarQuickSort(){
-        
     }
 }

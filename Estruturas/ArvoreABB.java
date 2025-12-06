@@ -3,6 +3,10 @@ package Estruturas;
 public class ArvoreABB {
     private No raiz;
 
+    public ArvoreABB() {
+        this.raiz = null;
+    }
+
     public void inserirABB(int valor) {
         raiz = inserirRecursivo(raiz, valor);
     }

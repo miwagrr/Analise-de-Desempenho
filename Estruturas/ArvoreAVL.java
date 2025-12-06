@@ -3,6 +3,10 @@ package Estruturas;
 public class ArvoreAVL {
     private No raiz;
 
+    public ArvoreAVL() {
+        this.raiz = null;
+    }
+
     private int calculoAltura(No no){
         if(no == null){
             return 0;
