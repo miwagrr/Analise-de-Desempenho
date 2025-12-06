@@ -84,5 +84,7 @@ public class Testes {
 
         double tempoVetor = MedidorTempo.medirInsercaoEmVetor(vetorTesteTempo);
         System.out.println("\nTempo de inserção no Vetor: " + tempoVetor + " ms");
+
+        
     }    
 }

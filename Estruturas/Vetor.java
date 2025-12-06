@@ -62,4 +62,55 @@ public class Vetor {
             }
         }
     }
+
+    public void ordenarMergeSort(int[] vetor, int inicio, int fim) {
+        if (inicio < fim) {
+            int meio = (inicio + fim) / 2;
+    
+            ordenarMergeSort(vetor, inicio, fim);
+            ordenarMergeSort(vetor, meio + 1, fim);
+    
+            merge(vetor, inicio, meio, fim);
+        }
+    }
+    
+    private void merge(int[] vetor, int inicio, int meio, int fim) {
+        int tamanhoEsquerda = meio - inicio + 1;
+        int tamanhoDireita = fim - meio;
+    
+        int[] esquerda = new int[tamanhoEsquerda];
+        int[] direita = new int[tamanhoDireita];
+    
+        for (int i = 0; i < tamanhoEsquerda; i++) {
+            esquerda[i] = vetor[inicio + i];
+        }
+        for (int j = 0; j < tamanhoDireita; j++) {
+            direita[j] = vetor[meio + 1 + j];
+        }
+    
+        int i = 0, j = 0, k = inicio;
+    
+        while (i < tamanhoEsquerda && j < tamanhoDireita) {
+            if (esquerda[i] <= direita[j]) {
+                vetor[k] = esquerda[i];
+                i++;
+            } else {
+                vetor[k] = direita[j];
+                j++;
+            }
+            k++;
+        }
+    
+        while (i < tamanhoEsquerda) {
+            vetor[k] = esquerda[i];
+            i++;
+            k++;
+        }
+    
+        while (j < tamanhoDireita) {
+            vetor[k] = direita[j];
+            j++;
+            k++;
+        }
+    }
 }
