@@ -67,7 +67,7 @@ public class Vetor {
         if (inicio < fim) {
             int meio = (inicio + fim) / 2;
     
-            ordenarMergeSort(vetor, inicio, fim);
+            ordenarMergeSort(vetor, inicio, meio);
             ordenarMergeSort(vetor, meio + 1, fim);
     
             merge(vetor, inicio, meio, fim);
